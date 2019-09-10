@@ -16,6 +16,51 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
+    <style>
+        .navbar-menu.is-active {
+        animation: navAnim .2s ease-in-out;
+        }
+
+        @keyframes navAnim {
+        0% {
+            display: none;
+            opacity: 0;
+            height: 0;
+        }
+        1% {
+            display: block;
+            opacity: 0;
+        }
+        20% {
+            display: block;
+            opacity: 0.2;
+            height: 26px;
+            
+        }
+        40% {
+            opacity: 0.4;
+            height: 48px;
+        }
+        50% {
+            opacity: 0.5;
+            height: 60px;
+        }
+        70% {
+            opacity: 0.7;
+            height: 90px;
+        }
+        100% {
+            opacity: 1;
+            height: 110px;
+        }
+        }
+        .form-div {
+            padding: 3rem;
+        }
+
+        
+    </style>
+
 
 </head>
 <body>

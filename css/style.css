@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     width: 100%;
     overflow-x: hidden;
 }
@@ -36,7 +36,7 @@ html, body {
 
 #hero-button {
     margin-bottom: 2rem;
-}
+} */
 
 #about-div {
     height: auto;
