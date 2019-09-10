@@ -44,11 +44,11 @@
             }
             70% {
                 opacity: 0.7;
-                height: 70px;
+                height: 90px;
             }
             100% {
                 opacity: 1;
-                height: 90px;
+                height: 110px;
             }
             }
             html, body {
@@ -56,60 +56,41 @@
             overflow-x: hidden;
             }
 
-            .hero.is-medium .hero-body {
-                padding-bottom: 4rem !important;
-                padding-top: 4rem !important;
-                
-            }
-
-            #hero {
-                background: #005C97; 
-                background: -webkit-linear-gradient(to right, #363795, #005C97);  
-                background: linear-gradient(to right, #363795, #005C97); 
-
-            }
-
-            #hero-text {
-                
-                display: flex;
+        .hero.is-medium .hero-body {
+            padding-bottom: 4rem !important;
+            padding-top: 4rem !important;
             
-                flex-direction: column;
-                justify-items: center;
-                justify-content: center;
-            }
+        }
 
-            #hero-text h2{
-                padding-top: 2rem;
-                padding-bottom: 1.5rem;
-            }
+        #hero {
+            background: #005C97; 
+            background: -webkit-linear-gradient(to right, #363795, #005C97);  
+            background: linear-gradient(to right, #363795, #005C97); 
 
-            #hero-text a {
-                width: 10rem;
-            }
+        }
 
-            #hero-button {
-                margin-bottom: 2rem;
-            }
+        #hero-text {
+            
+            display: flex;
+        
+            flex-direction: column;
+            justify-items: center;
+            justify-content: center;
+        }
+
+        #hero-text h2{
+            padding-top: 2rem;
+            padding-bottom: 1.5rem;
+        }
+
+        #hero-text a {
+            width: 10rem;
+        }
+
+        #hero-button {
+            margin-bottom: 2rem;
+        }
     </style>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-            AOS.init();
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-            if ($navbarBurgers.length > 0) { 
-            $navbarBurgers.forEach( el => {
-                el.addEventListener('click', () => {
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-                });
-            });
-            }
-        });
-    </script>
 
 
 </head>
@@ -118,7 +99,7 @@
     <nav class="navbar has-shadow  is-transparent" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
-                    <a class="navbar-item" href="#">
+                    <a class="navbar-item" href="/">
                         <!-- <h4 class="subtitle">&lt;ABDULRUB&gt;</h4> -->
                         <img src="img/logo.webp"  height="58">
                     </a>
@@ -404,7 +385,25 @@
 
 
     
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            AOS.init();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) { 
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+                });
+            });
+            }
+        });
+    </script>
 
 </body>
 </html>

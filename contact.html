@@ -47,38 +47,21 @@
         }
         70% {
             opacity: 0.7;
-            height: 70px;
+            height: 90px;
         }
         100% {
             opacity: 1;
-            height: 90px;
+            height: 110px;
         }
         }
         .form-div {
             padding: 3rem;
         }
 
-        
+        .form-div input {
+            
+        }
     </style>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-            AOS.init();
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-            if ($navbarBurgers.length > 0) { 
-            $navbarBurgers.forEach( el => {
-                el.addEventListener('click', () => {
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-                });
-            });
-            }
-        });
-    </script>
 
 
 </head>
@@ -174,7 +157,21 @@ Designed by Mohammed Affan Ahmed <br>
     <!-- END OF FOOTBAR SECTION -->
 
 
-   
+   <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) { 
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+                });
+            });
+            }
+        });
+    </script>
     
 
 </body>
